@@ -2,9 +2,14 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <link rel="preload" href="fonts/MullerBold.woff2" as="font" type="font/woff2" crossoring>
-    <link rel="preload" href="fonts/MullerMedium.woff2" as="font" type="font/woff2" crossoring>
-    <link rel="preload" href="fonts/MullerLight.woff2" as="font" type="font/woff2" crossoring>
+    <!-- Тег линк указывает на то, что необходимо загрузить информацию с других источников,
+    значение preload означает что информацию необходимо загрузить до начала рендеринга сайта,
+    href указывает, откуда брать информацию,
+    as="font" сообщает, что загружаемая иноформация - шрифты,
+    type - сообщает формат шрифта. -->
+    <link rel="preload" href="fonts/MullerBold.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/MullerMedium.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/MullerLight.woff2" as="font" type="font/woff2">
     <link href="style/style.css" rel="stylesheet">
     <title>Lagoona</title> 
   </head>
