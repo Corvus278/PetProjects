@@ -67,13 +67,13 @@ h2 {
   font-size: 16px;
 }
 
-.spectial-item-heading {
+.offers-card-heading {
   font-family: Muller;
   font-weight: 700;
   font-size: 40px;
 }
 
-.spetcial-item-description {
+.offers-card-price {
   font-family: Muller;
   font-weight: 400;
   font-size: 20px;
@@ -85,13 +85,14 @@ h2 {
   font-size: 16px;
 }
 
-.section-about-text {
+.about-text {
   font-family: Muller;
   font-weight: 400;
   font-size: 16px;
 }
 
-.section-servises-heading {
+.servises-heading-link {
+  font-family: Muller;
   font-weight: 500;
   font-size: 20px;
 }
@@ -102,25 +103,25 @@ h2 {
   font-size: 16px;
 }
 
-.section-advantages-item {
+.advantages-item {
   font-family: Muller;
   font-weight: 400;
   font-size: 16px;
 }
 
-.section-placement-list {
+.placement-list {
   font-family: Muller;
   font-weight: 400;
   font-size: 16px;
 }
 
-.placement-item-text-p-price {
+.hotel-price {
   font-family: Muller;
   font-weight: 700;
   font-size: 20px;
 }
 
-.placement-item-header {
+.hotel-name {
   font-family: Muller;
   font-weight: 400;
   font-size: 16px;
