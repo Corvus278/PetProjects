@@ -67,6 +67,12 @@ h2 {
   font-size: 16px;
 }
 
+.actions-button {
+  font-family: "Muller";
+  font-weight: 400;
+  font-size: 16px
+}
+
 .offers-card-heading {
   font-family: Muller;
   font-weight: 700;
