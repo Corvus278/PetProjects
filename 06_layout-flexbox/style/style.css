@@ -31,6 +31,8 @@
     url("../fonts/MullerLight.woff") format("woff");
 }
 
+/* Fonts */
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -49,12 +51,6 @@ h2 {
   font-family: "Muller";
   font-weight: 500;
 }
-
-/* .spectial-item-heading {
-  font-family: Muller;
-  font-weight: 700;
-  font-size: 40px;
-} */
 
 .header {
   font-family: "Muller";
@@ -77,6 +73,10 @@ h2 {
   font-family: Muller;
   font-weight: 700;
   font-size: 40px;
+}
+
+.luxury-heading {
+  font-size: 60px;
 }
 
 .offers-card-price {
@@ -131,4 +131,210 @@ h2 {
   font-family: Muller;
   font-weight: 400;
   font-size: 16px;
+}
+
+/* Global Settings */
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  /* padding: 0px 15px; */
+}
+
+/* Header */
+.header {
+  padding-top: 30px;
+  margin-bottom: 70px;
+}
+
+.header-top {
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-top-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: 40px;
+}
+
+.nav {
+  display: flex;
+  padding: 27px 45px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 45px;
+}
+
+.actions-button {
+  padding: 13px 20px;
+  border-radius: 10px;
+}
+
+.actions-button:not(:last-child) {
+  margin-right: 40px;
+}
+
+/* Offers */
+.offers {
+margin-bottom: 69px;
+}
+
+.section-heading {
+  margin-left: 40px;
+}
+
+.offers-heading {
+  margin-bottom: 20px;
+}
+
+.offers-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.offers-thumbs {
+  width: 50%;
+}
+
+.offer {
+  padding-top: 40px;
+  padding-left: 40px;
+  outline: 4px solid red;
+}
+
+.offer-maldives {
+  height: 258px;
+  margin-bottom: 23px;
+}
+
+.offer-crete_hote_tours {
+  height: 258px;
+}
+
+.offer-big {
+  width: 50%;
+  margin-left: 23px;
+  height: 540px;
+}
+
+.offer-rooms_luxury {
+  height: 100%;
+  padding-top: 208px;
+}
+
+.offers-card-heading {
+  max-width: 299px;
+  margin: 0px;
+  margin-bottom: 13px;
+}
+
+.offers-card-price {
+  margin-top: 0px;
+  margin-bottom: 35px;
+}
+
+/* About */
+.about {
+  margin-bottom: 70px;
+}
+
+.about-heading {
+  margin-bottom: 11px;
+}
+
+.about-text {
+  max-width: 888px;
+}
+
+/* Services */
+.services {
+  margin-bottom: 70px;
+}
+
+.services-heading {
+  margin-bottom: 20px;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services-card {
+  min-height: 330px;
+  max-width: 573px;
+  padding: 190px 126px 0px 45px;
+  outline: 4px solid red;
+  border-radius: 15px;
+}
+
+ .services-card:nth-child(odd) {
+  margin-right: 23px;
+}
+
+.services-card-top {
+  margin-bottom: 23px;
+}
+
+/* Advantages */
+.advantages-heading {
+  margin-bottom: 30px;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages-card {
+  max-width: 275px;
+  min-height: 275px;
+  padding: 116px 42px 0px 45px;
+  outline: auto;
+}
+
+.advantages-card:not(:nth-child(4)) {
+  margin-right: 23px;
+}
+
+.advantages-card:nth-child(8) {
+  margin-right: 0px;
+}
+
+.advantages-card:nth-child(-n+4) {
+  margin-bottom: 23px;
+}
+
+ .advantage {
+  line-height: 32px;
 }
