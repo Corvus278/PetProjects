@@ -133,6 +133,12 @@ h2 {
   font-size: 16px;
 }
 
+.placement-more-link {
+  font-family: Muller;
+  font-weight: 500;
+  font-size: 20px;
+}
+
 /* Global Settings */
 * {
   box-sizing: border-box;
@@ -307,6 +313,10 @@ margin-bottom: 69px;
 }
 
 /* Advantages */
+.advantages {
+  margin-bottom: 70px;
+}
+
 .advantages-heading {
   margin-bottom: 30px;
 }
@@ -337,4 +347,79 @@ margin-bottom: 69px;
 
  .advantage {
   line-height: 32px;
+}
+
+/* Placement */
+.placement-heading {
+  margin-bottom: 30px;
+}
+
+.placement-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.placement-card {
+  min-width: 32%;
+  min-height: 440px;
+  border-radius: 15px;
+  outline: auto;
+}
+
+.placement-card:not(:nth-child(3n)) {
+ margin-right: 23px;
+}
+
+.placement-card:not(:nth-child(n+7)) {
+  margin-bottom: 23px;
+}
+
+.placement-wrapper {
+  /* Position меняется для позиционирования рейтинга */
+  position: relative;
+  padding: 31px 0px 0px 45px;
+}
+
+.hotel-descripction {
+  margin: 0px;
+}
+
+.rating {
+  display: flex;
+  position: absolute;
+  right: 46px;
+  top: 40px;
+}
+
+.rating-star {
+  width: 14px;
+}
+
+.rating-star:not(:last-child) {
+  margin-right: 6px;
+}
+
+.hotel-name {
+  margin-bottom: 16px;
+}
+
+.hotel-descripction {
+  margin-bottom: 16px;
+}
+
+.hotel-rooms {
+  padding: 13px 20px;
+  border-radius: 15px;
+}
+
+.placement-card-more {
+  position: relative;
+}
+
+.placement-more-link {
+  position: absolute;
+  left: 54px;
+  bottom: 27px;
+  border: none;
+  background-color: transparent;
 }
