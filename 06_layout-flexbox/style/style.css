@@ -159,9 +159,9 @@ img {
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1200px;
   margin: 0 auto;
-  /* padding: 0px 15px; */
+padding: 0px 15px;
 }
 
 /* Header */
@@ -174,12 +174,25 @@ img {
   display: flex;
   margin-bottom: 30px;
   align-items: center;
-  justify-content: space-between;
 }
 
 .header-top-left {
   display: flex;
   align-items: center;
+}
+
+.header-tel-cont {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 744px;
+}
+
+.header-tel {
+  margin-right: 10px;
+}
+
+.header-return {
+  margin-left: auto;
 }
 
 .header-logo {
@@ -195,10 +208,18 @@ img {
 
 .nav-list {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 745px;
 }
 
 .nav-item:not(:last-child) {
   margin-right: 45px;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 420px;
 }
 
 .actions-button {
@@ -226,6 +247,7 @@ margin-bottom: 69px;
 .offers-cards {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .offers-thumbs {
@@ -233,28 +255,28 @@ margin-bottom: 69px;
 }
 
 .offer {
-  padding-top: 40px;
-  padding-left: 40px;
+  padding: 40px 40px 10px;
+  margin-bottom: 23px;
   outline: 4px solid red;
 }
 
 .offer-maldives {
-  height: 258px;
-  margin-bottom: 23px;
+  min-height: 258px;
+
 }
 
 .offer-crete_hote_tours {
-  height: 258px;
+  min-height: 258px;
+  margin-bottom: 23px;
 }
 
 .offer-big {
   width: 50%;
   margin-left: 23px;
-  height: 540px;
 }
 
 .offer-rooms_luxury {
-  height: 100%;
+  min-height: 540px;
   padding-top: 208px;
 }
 
@@ -308,7 +330,7 @@ margin-bottom: 69px;
   margin-right: 23px;
 }
 
-.services-card-top {
+.services-card {
   margin-bottom: 23px;
 }
 
@@ -333,15 +355,11 @@ margin-bottom: 69px;
   outline: auto;
 }
 
-.advantages-card:not(:nth-child(4)) {
+.advantages-card:not(:nth-child(4n)) {
   margin-right: 23px;
 }
 
-.advantages-card:nth-child(8) {
-  margin-right: 0px;
-}
-
-.advantages-card:nth-child(-n+4) {
+.advantages-card {
   margin-bottom: 23px;
 }
 
@@ -370,14 +388,16 @@ margin-bottom: 69px;
  margin-right: 23px;
 }
 
-.placement-card:not(:nth-child(n+7)) {
+.placement-card {
   margin-bottom: 23px;
 }
 
 .placement-wrapper {
-  /* Position меняется для позиционирования рейтинга */
-  position: relative;
-  padding: 31px 0px 0px 45px;
+  padding: 31px 45px 10px 45px;
+}
+
+.hotele-description-flex {
+  display: flex;
 }
 
 .hotel-descripction {
@@ -386,9 +406,7 @@ margin-bottom: 69px;
 
 .rating {
   display: flex;
-  position: absolute;
-  right: 46px;
-  top: 40px;
+  margin-left: auto;
 }
 
 .rating-star {
@@ -413,13 +431,10 @@ margin-bottom: 69px;
 }
 
 .placement-card-more {
-  position: relative;
+  padding: 373px 50px 27px 54px;
 }
 
 .placement-more-link {
-  position: absolute;
-  left: 54px;
-  bottom: 27px;
   border: none;
   background-color: transparent;
 }
