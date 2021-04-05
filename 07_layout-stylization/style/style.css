@@ -144,6 +144,18 @@ h2 {
   box-sizing: border-box;
 }
 
+p {
+  margin: 0px;
+}
+
+h2 {
+  margin: 0px;
+}
+
+h3 {
+  margin: 0px;
+}
+
 a {
   text-decoration: none;
 }
@@ -164,6 +176,19 @@ img {
 padding: 0px 15px;
 }
 
+.arrow::after {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  content: "";
+  width: 11px;
+  height: 11px;
+  border-top: 2px solid;
+  border-right: 2px solid;
+  transform: rotate(45deg)
+}
+
+
 /* Body */
 .body-index {
   background-color: #F1F1F1;
@@ -172,7 +197,7 @@ padding: 0px 15px;
 /* Header */
 .header {
   padding-top: 30px;
-  margin-bottom: 70px;
+  padding-bottom: 35px;
 }
 
 .header-top {
@@ -201,6 +226,7 @@ padding: 0px 15px;
 .header-return {
   margin-left: auto;
   padding-left: 28px;
+  max-width: 695px;
   color: #CC9933;
   background: url(..//pictures/arrow.svg) no-repeat;
   background-position: left top;
@@ -245,10 +271,12 @@ padding: 0px 15px;
   display: flex;
   flex-wrap: wrap;
   max-width: 420px;
+  margin-bottom: -10px;
   padding-left: 20px;
 }
 
 .actions-button {
+  margin-bottom: 10px;
   padding: 13px 20px;
   border-radius: 10px;
   background-color: inherit;
@@ -266,7 +294,8 @@ padding: 0px 15px;
 
 /* Offers */
 .offers {
-margin-bottom: 69px;
+  padding-top: 35px;
+  padding-bottom: 2px;
 }
 
 .section-heading {
@@ -289,10 +318,14 @@ margin-bottom: 69px;
 }
 
 .offer {
-  padding: 40px 40px 10px;
+  padding: 40px 110px 40px 40px;
   margin-bottom: 23px;
   border-radius: 15px;
   color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #b5b5b5;
+  line-height: 1;
 }
 
 .offers-card-price {
@@ -300,11 +333,8 @@ margin-bottom: 69px;
 }
 
 .link {
-  padding-right: 14px;
-  background: transparent;
-  background: url(..//pictures/arrow-short.svg) no-repeat right;
-  border: none;
   color: #FFCC66;
+  background: transparent;
 }
 
 .offer-maldives {
@@ -324,8 +354,12 @@ margin-bottom: 69px;
 }
 
 .offer-rooms_luxury {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  max-width: 573px;
   min-height: 540px;
-  padding-top: 208px;
   background-image: url(..//pictures/special-offer.jpg);
 }
 
@@ -342,7 +376,8 @@ margin-bottom: 69px;
 
 /* About */
 .about {
-  margin-bottom: 70px;
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 
 .about-heading {
@@ -356,7 +391,8 @@ margin-bottom: 69px;
 
 /* Services */
 .services {
-  margin-bottom: 70px;
+  padding-top: 35px;
+  padding-bottom: 12px;
 }
 
 .services-heading {
@@ -370,8 +406,6 @@ margin-bottom: 69px;
 
 .servises-heading-link {
   color: #CC9933;
-  padding-right: 14px;
-  background: url(..//pictures/arrow-short-servis.svg) no-repeat right;
 }
 
 .service-servicing {
@@ -397,7 +431,7 @@ margin-bottom: 69px;
 .services-card {
   min-height: 330px;
   max-width: 573px;
-  padding: 190px 126px 0px 45px;
+  padding: 190px 126px 10px 45px;
   margin-bottom: 23px;
   border-radius: 15px;
   background-color: white;
@@ -408,12 +442,14 @@ margin-bottom: 69px;
 }
 
 .service-card-text {
+  margin-top: 13px;
   line-height: 32px;
 }
 
 /* Advantages */
 .advantages {
-  margin-bottom: 70px;
+  padding-top: 35px;
+  padding-bottom: 12px;
 }
 
 .advantages-heading {
@@ -480,7 +516,7 @@ margin-bottom: 69px;
 .advantages-card {
   max-width: 275px;
   min-height: 275px;
-  padding: 116px 42px 0px 45px;
+  padding: 116px 42px 10px 45px;
   margin-bottom: 23px;
   border-radius: 15px;
 }
@@ -494,6 +530,9 @@ margin-bottom: 69px;
 }
 
 /* Placement */
+.placement {
+  padding-top: 35px;
+}
 
 .placement-heading {
   margin-bottom: 30px;
@@ -505,18 +544,15 @@ margin-bottom: 69px;
 }
 
 .placement-card {
-  min-width: 32%;
+  width: 32%;
   min-height: 440px;
+  margin-bottom: 23px;
   border-radius: 15px;
   background-color: white;
 }
 
 .placement-card:not(:nth-child(3n)) {
  margin-right: 23px;
-}
-
-.placement-card {
-  margin-bottom: 23px;
 }
 
 .hotel-img {
@@ -535,6 +571,10 @@ margin-bottom: 69px;
 
 .hotel-descripction {
   margin: 0px;
+}
+
+.placement-price-wrapper {
+  max-width: 185px;
 }
 
 .text-gray {
@@ -573,15 +613,17 @@ margin-bottom: 69px;
 }
 
 .placement-card-more {
-  padding: 373px 50px 27px 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 40px 40px 27px 54px;
   background: url(..//pictures/more-variants.jpg) no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .placement-more-link {
-  padding-right: 14px;
-  background: url(..//pictures/arrow-short-more.svg) no-repeat right;
-  border: none;
+  max-width: 280px;
   background-color: inherit;
   color: white;
 }
