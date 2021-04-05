@@ -295,7 +295,7 @@ padding: 0px 15px;
 /* Offers */
 .offers {
   padding-top: 35px;
-  padding-bottom: 35px;
+  padding-bottom: 2px;
 }
 
 .section-heading {
@@ -392,7 +392,7 @@ padding: 0px 15px;
 /* Services */
 .services {
   padding-top: 35px;
-  padding-bottom: 35px;
+  padding-bottom: 12px;
 }
 
 .services-heading {
@@ -449,7 +449,7 @@ padding: 0px 15px;
 /* Advantages */
 .advantages {
   padding-top: 35px;
-  padding-bottom: 35px;
+  padding-bottom: 12px;
 }
 
 .advantages-heading {
