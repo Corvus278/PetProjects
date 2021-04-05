@@ -329,6 +329,8 @@ padding: 0px 15px;
 }
 
 .offers-card-price {
+  margin-top: 0px;
+  margin-bottom: 47px;
   opacity: .8;
 }
 
@@ -366,12 +368,7 @@ padding: 0px 15px;
 .offers-card-heading {
   max-width: 299px;
   margin: 0px;
-  margin-bottom: 13px;
-}
-
-.offers-card-price {
-  margin-top: 0px;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
 }
 
 /* About */
