@@ -179,6 +179,10 @@ h2 {
   line-height: 30.6px;
 }
 
+address {
+  font-style: normal;
+}
+
 .footer-center {
   line-height: 23.76px;
 }
@@ -232,6 +236,14 @@ padding: 0px 15px;
   transform: rotate(45deg)
 }
 
+button:hover {
+  color: white;
+  background-color: #CC9933;
+}
+
+button:focus {
+  outline: none;
+}
 
 /* Body */
 .body-index {
@@ -672,7 +684,7 @@ padding: 0px 15px;
 
 /* Form */
 .form {
-  padding-top: 35px;
+  padding: 35px 0px;
 }
 
 .form-container {
@@ -791,8 +803,149 @@ padding: 0px 15px;
   border-radius: 10px;
 }
 
-.tour-search:hover {
-  /* Что бы видно была что кнопка работает */
+/* Contacts */
+.contacts {
+  padding-top: 35px;
+  padding-bottom: 8px;
+}
+
+.contacts-heading {
+  margin-bottom: 26px;
+}
+
+.contacts-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 44px 44px 46px 46px;
+  background-color:white;
+  border-radius: 15px;
+}
+
+.contacts-content-left {
+  width: 375px;
+  margin-right: 45px;
+  margin-bottom: -10px;
+}
+
+.contacts-info {
+  display: flex;
+  margin-bottom: 45px;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.contact-info-card {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #C4C4C4;
+}
+
+.contact-info-card:not(:first-child) {
+  padding-top: 25px;
+}
+
+.contact-address-text {
+  max-width: 229px;
+}
+
+.contact-card-heading {
+  max-width: 148px;
+  margin-right: auto;
+}
+
+.contact-tel-text {
+  display: flex;
+  min-width: 229px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-email-text {
+  max-width: 229px;
+}
+
+.contact-schedule-text {
+  max-width: 229px;
+}
+
+.link-yellow {
+  color: #CC9933;
+}
+
+.contacts-btn {
+  padding: 27px 29px;
+  margin-bottom: 10px;
+  background-color: inherit;
+  color: #CC9933;
+  border: 1px solid #CC9933;
+  border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+  padding-top: 8px;
+  padding-bottom: 20px;
+}
+
+.footer-container {
+  display: flex;
+  min-height: 341px;
+  padding: 44px 51px 55px 52px;
+  background-color: #333333;
+  border-radius: 15px;
   color: white;
-  background-color: #CC9933;
+  background-image: url(..//pictures/footer-logo-svg.svg);
+  background-repeat: no-repeat;
+  background-position: 80% 100%;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 102px;
+  max-width: 320px;
+}
+
+.footer-text {
+  margin-bottom: 10px;
+}
+
+.footer-link {
+  line-height: 1;
+}
+
+.footer-center {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  max-width: 580px;
+}
+
+.footer-tels {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.footer-emails {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.footer-address {
+  margin-bottom: 35px;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  width: 25px;
+  opacity: 50%;
+}
+
+.link-social {
+  margin-bottom: 10px;
 }
