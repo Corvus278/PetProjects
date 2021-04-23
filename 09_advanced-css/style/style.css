@@ -1,5 +1,5 @@
 @font-face {
-  font-weight: 700;
+  font-weight: bold;
   font-style: normal;
   font-family: "Muller";
   font-display: swap;
@@ -21,7 +21,7 @@
 }
 
 @font-face {
-  font-weight: 400;
+  font-weight: normal;
   font-style: normal;
   font-family: "Muller";
   font-display: swap;
@@ -29,6 +29,13 @@
     local("Muller"),
     url("../fonts/MullerLight.woff2") format("woff2"),
     url("../fonts/MullerLight.woff") format("woff");
+}
+
+/* Variables */
+:root {
+  --lagoona-light: #FFCC66;
+  --lagoona-dark: #CC9933;
+
 }
 
 /* Fonts */
@@ -43,8 +50,14 @@
 
 h2 {
   font-family: "Muller";
-  font-weight: 400;
+  font-weight: normal;
   font-size: 40px;
+}
+
+.header {
+  font-family: "Muller";
+  font-weight: normal;
+  font-size: 16px;
 }
 
 .header-tel {
@@ -52,26 +65,21 @@ h2 {
   font-weight: 500;
 }
 
-.header {
-  font-family: "Muller";
-  font-weight: 400;
-  font-size: 16px;
-}
 .header-return {
   font-family: Muller;
-  font-weight: 400;
+  font-weight: normal;
   font-size: 16px;
 }
 
 .actions-button {
   font-family: "Muller";
-  font-weight: 400;
+  font-weight: normal;
   font-size: 16px
 }
 
 .offers-card-heading {
   font-family: Muller;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 40px;
 }
 
@@ -81,19 +89,19 @@ h2 {
 
 .offers-card-price {
   font-family: Muller;
-  font-weight: 400;
+  font-weight: normal;
   font-size: 20px;
 }
 
 .link {
   font-family: Muller;
-  font-weight: 400;
+  font-weight: normal;
   font-size: 16px;
 }
 
 .about-text {
   font-family: Muller;
-  font-weight: 400;
+  font-weight: normal;
   font-size: 16px;
 }
 
@@ -105,31 +113,31 @@ h2 {
 
 .service-card-text {
   font-family: Muller;
-  font-weight: 400;
+  font-weight: normal;
   font-size: 16px;
 }
 
 .advantage {
   font-family: Muller;
-  font-weight: 400;
+  font-weight: normal;
   font-size: 16px;
 }
 
 .placement-list {
   font-family: Muller;
-  font-weight: 400;
+  font-weight: normal;
   font-size: 16px;
 }
 
 .hotel-price {
   font-family: Muller;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 20px;
 }
 
 .hotel-name {
   font-family: Muller;
-  font-weight: 400;
+  font-weight: normal;
   font-size: 16px;
 }
 
@@ -156,20 +164,20 @@ h2 {
 
 .contact-card-heading {
   font-family: Muller;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 20px;
 }
 
 .contact-card-text {
   font-family: Muller;
-  font-weight: 400;
+  font-weight: normal;
   font-size: 16px;
   line-height: 24px;
 }
 
 .contacts-btn {
   font-family: Muller;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 16px;
 }
 
@@ -205,7 +213,13 @@ h3 {
 }
 
 a {
+  display: inline-block;
   text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--lagoona-light);
 }
 
 ul {
@@ -221,7 +235,7 @@ img {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-padding: 0px 15px;
+  padding: 0px 15px;
 }
 
 .arrow::after {
@@ -233,16 +247,30 @@ padding: 0px 15px;
   height: 11px;
   border-top: 2px solid;
   border-right: 2px solid;
-  transform: rotate(45deg)
+  transform: rotate(45deg);
+  transition: transform 0.2s ease;
+}
+
+.arrow:hover::after {
+  transform: translateX(3px) rotate(45deg);
+}
+
+button {
+  transition: color 0.2s ease, background 0.2s ease, transform 0.2s ease;
 }
 
 button:hover {
   color: white;
-  background-color: #CC9933;
+  background-color: var(--lagoona-dark);
+  cursor: pointer;
 }
 
 button:focus {
   outline: none;
+}
+
+button:active {
+  transform: translateY(2px);
 }
 
 /* Body */
@@ -283,7 +311,7 @@ button:focus {
   margin-left: auto;
   padding-left: 28px;
   max-width: 695px;
-  color: #CC9933;
+  color: var(--lagoona-dark);
   background: url(..//pictures/arrow.svg) no-repeat;
   background-position: left top;
   line-height: 16px;
@@ -336,8 +364,8 @@ button:focus {
   padding: 13px 20px;
   border-radius: 10px;
   background-color: inherit;
-  border: solid 1px #CC9933;
-  color: #CC9933;
+  border: solid 1px var(--lagoona-dark);
+  color: var(--lagoona-dark);
 }
 
 .actions-button:focus {
@@ -391,13 +419,13 @@ button:focus {
 }
 
 .link {
-  color: #FFCC66;
+  color: var(--lagoona-light);
   background: transparent;
 }
 
 .offer-maldives {
   min-height: 258px;
-  background-image: url(..//pictures/maldives.jpg);
+  background: url(..//pictures/darken-maldiv-card.png), url(..//pictures/maldives.jpg);
 }
 
 .offer-crete_hote_tours {
@@ -458,7 +486,7 @@ button:focus {
 }
 
 .servises-heading-link {
-  color: #CC9933;
+  color: var(--lagoona-dark);
 }
 
 .service-servicing {
@@ -660,13 +688,14 @@ button:focus {
   padding: 13px 20px;
   border-radius: 15px;
   background-color: inherit;
-  border: 1px solid #CC9933;
+  border: 1px solid var(--lagoona-dark);
   border-radius: 10px;
-  color: #CC9933;
+  color: var(--lagoona-dark);
 
 }
 
 .placement-card-more {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -680,6 +709,15 @@ button:focus {
   max-width: 280px;
   background-color: inherit;
   color: white;
+}
+
+.placement-more-link::before {
+  position: absolute;
+  content: "";
+  top: 0px;
+  right:0px;
+  bottom: 0px;
+  left: 0px;
 }
 
 /* Form */
@@ -768,9 +806,9 @@ button:focus {
 .tour-search {
   margin-left: 20px;
   padding: 13px 30px;
-  color: #CC9933;
+  color: var(--lagoona-dark);
   background-color: inherit;
-  border: 1px solid #CC9933;
+  border: 1px solid var(--lagoona-dark);
   border-radius: 10px;
 }
 
@@ -841,15 +879,15 @@ button:focus {
 }
 
 .link-yellow {
-  color: #CC9933;
+  color: var(--lagoona-dark);
 }
 
 .contacts-btn {
   padding: 27px 29px;
   margin-bottom: 10px;
   background-color: inherit;
-  color: #CC9933;
-  border: 1px solid #CC9933;
+  color: var(--lagoona-dark);
+  border: 1px solid var(--lagoona-dark);
   border-radius: 10px;
 }
 
@@ -875,6 +913,7 @@ button:focus {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: flex-start;
   margin-right: 102px;
   max-width: 320px;
 }
@@ -890,6 +929,7 @@ button:focus {
 .footer-center {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   margin-right: auto;
   max-width: 580px;
 }
@@ -926,6 +966,10 @@ button:focus {
   background-repeat: no-repeat;
 }
 
+.link-social:hover {
+  opacity: 80%;
+}
+
 .link-tripadvisor {
   background: url(..//pictures/i-tripadvisor.svg);
 }
@@ -945,5 +989,4 @@ button:focus {
 .link-instagram {
   background: url(..//pictures/i-instagram.svg);
 }
-
 
