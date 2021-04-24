@@ -38,47 +38,38 @@
 
 }
 
-/* Fonts */
-
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+/* Body */
+.body-index {
+  font-family: "Muller", sans-serif;
+  background-color: #F1F1F1;
 }
 
-h2 {
-  font-family: "Muller";
+/* Fonts */
+.index-h2 {
   font-weight: normal;
   font-size: 40px;
 }
 
 .header {
-  font-family: "Muller";
   font-weight: normal;
   font-size: 16px;
 }
 
 .header-tel {
-  font-family: "Muller";
   font-weight: 500;
 }
 
 .header-return {
-  font-family: Muller;
   font-weight: normal;
   font-size: 16px;
 }
 
 .actions-button {
-  font-family: "Muller";
   font-weight: normal;
   font-size: 16px
 }
 
 .offers-card-heading {
-  font-family: Muller;
   font-weight: bold;
   font-size: 40px;
 }
@@ -88,106 +79,89 @@ h2 {
 }
 
 .offers-card-price {
-  font-family: Muller;
   font-weight: normal;
   font-size: 20px;
 }
 
 .link {
-  font-family: Muller;
   font-weight: normal;
   font-size: 16px;
 }
 
 .about-text {
-  font-family: Muller;
   font-weight: normal;
   font-size: 16px;
 }
 
 .servises-heading-link {
-  font-family: Muller;
   font-weight: 500;
   font-size: 20px;
 }
 
 .service-card-text {
-  font-family: Muller;
   font-weight: normal;
   font-size: 16px;
 }
 
 .advantage {
-  font-family: Muller;
   font-weight: normal;
   font-size: 16px;
 }
 
 .placement-list {
-  font-family: Muller;
   font-weight: normal;
   font-size: 16px;
 }
 
 .hotel-price {
-  font-family: Muller;
   font-weight: bold;
   font-size: 20px;
 }
 
 .hotel-name {
-  font-family: Muller;
   font-weight: normal;
   font-size: 16px;
 }
 
 .placement-more-link {
-  font-family: Muller;
   font-weight: 500;
   font-size: 20px;
 }
 
 .form-label {
-  font-family: Muller;
   font-size: 12px;
   line-height: 12px;
 }
 
 .input {
-  font-family: Muller;
   font-size: 16px;
 }
 .tour-search {
-  font-family: Muller;
   font-size: 16px;
 }
 
 .contact-card-heading {
-  font-family: Muller;
   font-weight: bold;
   font-size: 20px;
 }
 
 .contact-card-text {
-  font-family: Muller;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
 }
 
 .contacts-btn {
-  font-family: Muller;
   font-weight: bold;
   font-size: 16px;
 }
 
 .footer-container {
-  font-family: Muller;
   font-size: 16px;
   line-height: 30.6px;
 }
 
-address {
+.index-address {
   font-style: normal;
 }
 
@@ -200,29 +174,32 @@ address {
   box-sizing: border-box;
 }
 
-p {
+.index-p {
   margin: 0px;
 }
 
-h2 {
+.index-h2 {
   margin: 0px;
 }
 
-h3 {
+.index-h3 {
   margin: 0px;
 }
 
 a {
-  display: inline-block;
   text-decoration: none;
+}
+
+.index-a {
+  display: inline-block;
   transition: color 0.2s ease;
 }
 
-a:hover {
+.index-a:hover {
   color: var(--lagoona-light);
 }
 
-ul {
+.index-ul {
   margin: 0px;
   padding: 0px;
   list-style: none;
@@ -255,27 +232,30 @@ img {
   transform: translateX(3px) rotate(45deg);
 }
 
-button {
+.button--effects1 {
   transition: color 0.2s ease, background 0.2s ease, transform 0.2s ease;
 }
 
-button:hover {
+.button--effects1:hover {
   color: white;
   background-color: var(--lagoona-dark);
   cursor: pointer;
 }
 
-button:focus {
+.button--effects1:focus {
   outline: none;
 }
 
-button:active {
+.button--effects1:active {
   transform: translateY(2px);
 }
 
-/* Body */
-.body-index {
-  background-color: #F1F1F1;
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 /* Header */
@@ -518,7 +498,7 @@ button:active {
   background-color: white;
 }
 
- .services-card:nth-child(odd) {
+.services-card:nth-child(odd) {
   margin-right: 23px;
 }
 
@@ -791,11 +771,14 @@ button:active {
   position: absolute;
   top: -4px;
   right: -8px;
-  width: 13;
+  width: 13px;
   height: 14.6px;
   background-image: url(..//pictures/calendar.svg);
 }
 
+.input-date:focus {
+  outline: none;
+}
 
 .input-number {
   width: 121px;
@@ -964,6 +947,7 @@ button:active {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  transition: opacity 0.2s ease;
 }
 
 .link-social:hover {
@@ -989,4 +973,3 @@ button:active {
 .link-instagram {
   background: url(..//pictures/i-instagram.svg);
 }
-
