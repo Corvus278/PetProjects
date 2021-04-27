@@ -763,7 +763,7 @@ img {
 
 .input-date {
   position: relative;
-  max-width: 121px;
+  width: 121px;
   -webkit-writing-mode: none;
 }
 
@@ -783,7 +783,10 @@ img {
 .input-number {
   width: 121px;
   border-bottom: 1px solid #CCCCCC;
+}
 
+.input-number:focus {
+  outline: none;
 }
 
 .tour-search {
