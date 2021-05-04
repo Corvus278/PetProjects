@@ -1,0 +1,164 @@
+/* montserrat-regular*/
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/montserrat-v15-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/montserrat-v15-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/montserrat-v15-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/montserrat-v15-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/montserrat-v15-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/montserrat-v15-latin_cyrillic-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+/* montserrat-600*/
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/montserrat-v15-latin_cyrillic-600.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/montserrat-v15-latin_cyrillic-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/montserrat-v15-latin_cyrillic-600.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/montserrat-v15-latin_cyrillic-600.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/montserrat-v15-latin_cyrillic-600.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/montserrat-v15-latin_cyrillic-600.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+/* montserrat-700*/
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/montserrat-v15-latin_cyrillic-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/montserrat-v15-latin_cyrillic-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/montserrat-v15-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/montserrat-v15-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/montserrat-v15-latin_cyrillic-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/montserrat-v15-latin_cyrillic-700.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+/* montserrat-800*/
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/montserrat-v15-latin_cyrillic-800.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/montserrat-v15-latin_cyrillic-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/montserrat-v15-latin_cyrillic-800.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/montserrat-v15-latin_cyrillic-800.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/montserrat-v15-latin_cyrillic-800.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/montserrat-v15-latin_cyrillic-800.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+
+/* Fonts */
+.index-body {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.nav__list {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.order__header {
+  font-weight: 800;
+  font-size: 70.37px;
+  line-height: 85.79px;
+}
+
+.order__description {
+  font-weight: 700;
+  font-size: 23.46px;
+  line-height: 28.6px;
+}
+
+.button {
+  font-weight: 700;
+  font-size: 23.46px;
+}
+
+.section-heading {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58.51px;
+}
+
+.about__text {
+  line-height: 32px;
+}
+
+.about-card-big__text {
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.button--section-about {
+  font-size: 16px;
+}
+
+.card__heading {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.card__text {
+  line-height: 32px;
+}
+
+.as-we-work__step-button {
+  font-size: 18px;
+}
+
+.as-we-work__heading {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.as-we-work__text-content {
+  line-height: 32px;
+}
+
+.as-we-work__more {
+  font-size: 16px;
+  line-height: 19.5px;
+}
+
+.as-we-work__offer {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.5px;
+}
+
+.question__heading {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.footer-nav__list {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 36px;
+}
+
+.application-form {
+  line-height: 32px;
+}
+
+.application-form__heading {
+  font-weight: 400;
+  font-size: 48px;
+}
+
+.application-form__button {
+  font-size: 16px;
+  line-height: 19.5px;
+}
+
+.footer__text {
+  line-height: 32px;
+}
