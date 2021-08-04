@@ -1085,13 +1085,51 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   }
 }
 
-@media (max-width: 768px) {
-  .header__container {
-    min-height: 69px;
+@media (max-width: 1024px) {
+  .order {
+    padding-bottom: 40px;
   }
 
-  .order {
-    margin-top: 69px;
+  .order__wrapper {
+    padding: 160px 77px;
+    background-image: url(../pictures/project-solutions-back_1024.jpg);
+    background-position: 0% 50%;
+  }
+
+  .order__heading {
+    margin-bottom: 16px;
+    font-size: 60px;
+    line-height: 73px;
+  }
+
+  .order__description {
+    margin-bottom: 60px;
+    font-size: 20px;
+    line-height: 24.38px;
+  }
+
+  .index-footer__left {
+    margin-right: auto;
+  }
+
+  .index-footer__right {
+    display: none;
+  }
+
+  .index-footer__center {
+    margin-right: 0;
+    min-width: 570px;
+  }
+}
+
+@media (max-width: 768px) {
+  .order__wrapper {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .header__container {
+    min-height: 69px;
   }
 
   .header__container {
@@ -1102,6 +1140,21 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   .mobile-menu {
     padding-top: 21px;
     min-height: 737px;
+  }
+
+  .order {
+    margin-top: 69px;
+  }
+
+  .order__heading {
+    margin-bottom: 16px;
+    font-size: 50px;
+    line-height: 61px;
+  }
+
+  .order__description {
+    font-size: 18px;
+    line-height: 22px;
   }
 }
 
@@ -1135,9 +1188,35 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   }
 }
 
-@media (max-width: 367px) {
+@media (max-width: 430px) {
   .header__search-input {
     margin-right: 0px;
+  }
+
+  .order__wrapper {
+    padding: 60px 22px;
+  }
+
+  .order__content {
+    text-align: center;
+  }
+
+  .order__heading {
+    margin-bottom: 6px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .order__description {
+    margin-bottom: 32px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .order__order-payment {
+    min-width: 162px;
+    padding: 13px 24.5px;
+    font-size: 12px;
   }
 }
 
