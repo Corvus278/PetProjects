@@ -76,6 +76,7 @@
 img {
   max-width: 100%;
 }
+
 .container {
   max-width: 1920px;
   margin: 0px auto;
@@ -435,13 +436,14 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 .about__heading {
-  margin-bottom: 21px;
+  margin-bottom: 11px;
   padding-left: 2px;
 }
 
 .about__text {
   max-width: 1235px;
   margin-bottom: 49px;
+  line-height: 32px;
 }
 
 .about__cards {
@@ -481,7 +483,13 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .card-big__text {
   max-width: 454px;
   padding-left: 1px;
+  margin-right: 20px;
+}
 
+.about-card__mobile-img {
+  display: none;
+  width: 100%;
+  margin-bottom: 8px;
 }
 
 .button--section-about {
@@ -500,11 +508,13 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .about-card--bilder {
   background: url(../pictures/bilder.jpg);
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .card-small {
   min-height: 295px;
-  padding: 65px 12% 15px 34.4%;
+  padding: 65px 12% 35px 34.4%;
   border: 1px solid #CACACA;
   background-repeat: no-repeat;
   background-position: 8.7% center;
@@ -520,7 +530,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 .about-card--circle-cube {
-  background-image: url(../pictures/circle-with-cube.png);
+  background-image: url(../pictures/circle-with-cube.svg);
 }
 
 .about-card--circle-setting {
@@ -1100,12 +1110,57 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   .header__logo {
     width: 150px;
   }
+
+  .about__cards {
+    flex-direction: column;
+  }
+
+  .about__cards-wrapper {
+    width: 100%;
+  }
+
+  .about__cards-wrapper--big {
+    margin-bottom: 32px;
+  }
+
+  .about__text {
+    margin-bottom: 61px;
+  }
+
+  .card-big__content {
+    padding-left: 5.4%;
+    padding-right: 5.4%;
+  }
+
+  .about-card--bilder {
+    min-height: 640px;
+  }
+
+  .card-small {
+    padding-left: 34.1%;
+    background-position: 10% center;
+    background-size: 20.8%;
+  }
+
+  .card-small__text {
+    max-width: 450px;
+  }
 }
 
 @media (max-width: 1024px) {
-  .order {
+  .index-section {
+    padding-top: 40px;
     padding-bottom: 40px;
   }
+
+  .order {
+    padding-top: 0px;
+  }
+
+  .questions {
+    padding-bottom: 80px;
+  }
+
 
   .order__wrapper {
     padding: 160px 77px;
@@ -1172,6 +1227,109 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   .order__description {
     font-size: 18px;
     line-height: 22px;
+  }
+
+  .about-card--bilder {
+    min-height: 650px;
+  }
+
+  .card-big__content {
+    padding: 34px 5.9%;
+  }
+
+  .card-big__text {
+    max-width: 366px;
+  }
+
+  .card-small {
+    padding: 35px 46px 35px 25.1%;
+    min-height: 235px;
+    background-position: 7% center;
+    background-size: 16.8%;
+  }
+}
+
+@media (max-width: 670px) {
+  .index-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .order {
+    padding-top: 0px;
+  }
+
+  .questions {
+    padding-bottom: 60px;
+  }
+
+  .about__heading {
+    margin-bottom: 21px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .about__text {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .about-card--bilder {
+    min-height: 400px;
+    background-size: contain;
+    background-position: top;
+    background-image: none;
+  }
+
+  .about-card__mobile-img {
+    display: block;
+  }
+
+  .card-big__content {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    background: none;
+    color: black;
+  }
+
+  .card-big__text {
+    margin-right: 0px;
+    margin-bottom: 8px;
+    max-width: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+
+  .button--section-about {
+    padding: 12px 42px;
+    border-width: 2px;
+    color: #FF9900;
+    font-size: 12px;
+  }
+
+  .card-small {
+    padding: 0px;
+    padding-top: 61px;
+    min-height: 0;
+    border: none;
+    background-size: 64px 49px;
+    background-position: 0 0;
+  }
+
+  .card-small__heading {
+    margin-bottom: 4px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+
+  .card-small__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
   }
 }
 
