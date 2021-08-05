@@ -265,10 +265,6 @@ img {
   line-height: 29.26px;
 }
 
-.mobile-menu__nav-link:hover {
-  cursor: pointer;
-}
-
 .header-nav {
   margin-left: auto;
   max-width: 80%;
@@ -358,11 +354,6 @@ img {
   font-weight: 500;
 }
 
-.header__search-input:focus {
-  outline: none;
-  border-color: #FF9900;
-}
-
 /* ------ Скрытие крестика у инпута ----- */
 input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
 input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
@@ -379,10 +370,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   border: none;
 }
 
-.header__search-submit:hover {
-  cursor: pointer;
-}
-
 .header__search-submit-img {
   max-width: 100%;
   max-height: 100%;
@@ -394,10 +381,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   height: 24px;
   border: none;
   background: transparent;
-}
-
-.header__search-close:hover {
-  cursor: pointer;
 }
 
 .header__search-close-img {
@@ -842,6 +825,14 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 /* Focus */
+.mobile-menu__close-button:focus {
+  outline: 2px solid #FF9900;
+}
+
+.mobile-menu__nav-link:focus {
+  outline: 2px solid #FF9900;
+}
+
 .header-nav__link:focus {
   border: none;
   outline: 2px solid #FF9900;
@@ -849,6 +840,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .header__search-button:focus {
   outline: 2px solid #FF9900
+}
+
+.header__search-input:focus {
+  outline: none;
+  border-color: #FF9900;
 }
 
 .order__order-payment:focus {
@@ -917,6 +913,15 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 /* Hover */
+.burger-button:hover {
+  cursor: pointer;
+}
+
+.mobile-menu__nav-link:hover {
+  cursor: pointer;
+  outline: none;
+}
+
 .header-nav__link:hover {
   border-bottom: 2px solid #FF9900;
   outline: none;
@@ -927,6 +932,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   outline: none;
 }
 
+.mobile-menu__close-button:hover {
+  cursor: pointer;
+  outline: none;
+}
 
 .order__order-payment:hover {
   background-color: rgba(255, 153, 0, 0.7);
@@ -934,6 +943,14 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .button--section-about:hover {
   background-color: #FF9900;
+}
+
+.header__search-submit:hover {
+  cursor: pointer;
+}
+
+.header__search-close:hover {
+  cursor: pointer;
 }
 
 .as-we-work__step-button:hover {
