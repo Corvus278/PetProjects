@@ -256,7 +256,7 @@
             </h3>
           </li>
           <li class="question" tabindex="0">
-            <h3 class="question__heading index-h3">
+            <h3 class="question__heading index-h3 question__heading--length-limitation1">
               У меня есть свой проект. Сможем ли мы его доработать <span class="gray-slash">/</span> реализовать?
               <span class="question__icon"></span>
             </h3>
@@ -268,7 +268,7 @@
             </h3>
           </li>
           <li class="question" tabindex="0">
-            <h3 class="question__heading index-h3">
+            <h3 class="question__heading index-h3 question__heading--length-limitation2">
               Могу ли я делегировать вам работу <span class="gray-slash">/</span>
               согласование с подрядчиком <span class="gray-slash">/</span> организацией?
               <span class="question__icon"></span>
@@ -282,6 +282,19 @@
           </li>
         </ul>
       </div>
+      <script>
+        window.addEventListener('resize', () => {
+          const questions = document.querySelectorAll('.question')
+          for (const question of questions) {
+            const questionText = question.querySelector('.question__heading')
+            if (questionText.offsetHeight > parseInt(document.defaultView.getComputedStyle(questionText, '').lineHeight)) {
+              question.classList.add('question--small-padding')
+            } else {
+              question.classList.remove('question--small-padding')
+            }
+          }
+        })
+      </script>
     </section>
   </main>
 

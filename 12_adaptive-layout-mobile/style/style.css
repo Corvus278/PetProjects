@@ -666,6 +666,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   transition-duration: .3s;
 }
 
+.question--small-padding {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .question__heading {
   padding-right: 80px;
 }
@@ -678,7 +683,8 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   position: absolute;
   width: 50px;
   height: 50px;
-  top: 25%;
+  top: 50%;
+  transform: translateY(-50%);
   right: 0px;
   background-color: #ECECEC;
   border-radius: 50%;
@@ -1065,7 +1071,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .question:active
 .question__icon {
   background-color: #ECECEC;
-  transform: rotate(45deg);
+  transform: translateY(-50%) rotate(45deg);
 }
 
 .question:active
@@ -1228,6 +1234,23 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     margin-bottom: 22px;
   }
 
+  .questions-heading {
+    margin-bottom: 34px;
+  }
+
+  .question__heading {
+    font-size: 20px;
+  }
+
+  .question__heading--length-limitation1 {
+    max-width: calc(639px + 80px);
+  }
+
+  .question__heading--length-limitation2 {
+    max-width: calc(756px + 80px);
+  }
+}
+
 @media (max-width: 768px) {
   .order__wrapper {
     padding-left: 40px;
@@ -1306,6 +1329,14 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     min-height: 284px;
     background-image: url(../pictures/consultation.jpg);
     background-position: center;
+  }
+
+  .questions {
+    padding-top: 42px;
+  }
+
+  .question__heading {
+    max-width: calc(570px + 80px);
   }
 }
 
@@ -1452,6 +1483,21 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     font-size: 12px;
     line-height: 15px;
   }
+
+  .questions-heading {
+    margin-bottom: 16px;
+  }
+
+  .question__heading {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  .question__icon {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 @media (max-width: 580px) {
@@ -1577,5 +1623,18 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
   .as-we-work__content {
     padding-top: 178px;
+  }
+
+  .questions {
+    padding-top: 34px;
+  }
+
+  .question__heading {
+    padding-right: 46px;
+  }
+
+  .question__icon {
+    width: 30px;
+    height: 30px;
   }
 }
