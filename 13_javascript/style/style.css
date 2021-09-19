@@ -39,6 +39,15 @@
 }
 
 /* Global */
+:root {
+  --swiper-pagination-bullet-size: 15px;
+  --swiper-pagination-bullet-margin-bottom: 30px;
+  --swiper-pagination-bullet-horizontal-gap: 10px;
+  --swiper-theme-color: #fff;
+  --swiper-pagination-bullet-inactive-color: #fff;
+  --swiper-pagination-bullet-inactive-opacity: 0.4;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -58,6 +67,7 @@
 
 .index-ul {
   margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -209,7 +219,7 @@ img {
   top: 0px;
   left: 0px;
   box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
-  z-index: 1;
+  z-index: 100;
 }
 
 .header__container {
@@ -405,7 +415,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   position: relative;
   padding: 101px 81px;
   color: white;
-  background: url("../pictures/project-solutions-back.jpg") no-repeat;
   background-size: cover;
 }
 
@@ -428,6 +437,52 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   margin-bottom: 0.1px;
   transition-property: background-color;
   transition-duration: .2s;
+}
+
+.swiper-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Swiper */
+.swiper-pagination {
+  z-index: 10;
+}
+
+.swiper-button-next {
+  z-index: 1000;
+}
+
+.swiper-horizontal>
+.swiper-pagination-bullets,
+.swiper-pagination-bullets
+.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: var(--swiper-pagination-bullet-margin-bottom);
+}
+
+.order__background {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.order__background--1 {
+  background-image: url("../pictures/low-angle-photo-of-balconies-2462015\ 1.jpg");
+}
+
+.order__background--2 {
+  background-image: url("../pictures/brown-and-blue-glass-building.jpg");
+}
+
+.order__background--3 {
+  background-image: url("../pictures/gray-building.jpg");
 }
 
 .button--orange {
@@ -1261,6 +1316,9 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
   .order__wrapper {
     padding: 160px 77px;
+  }
+
+  .order__background--1 {
     background-image: url(../pictures/project-solutions-back_1024.jpg);
     background-position: 0% 50%;
   }
@@ -1678,6 +1736,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 @media (max-width: 430px) {
+  :root {
+    --swiper-pagination-bullet-size: 10px;
+    --swiper-pagination-bullet-margin-bottom: 15px;
+  }
   .header__search-input {
     margin-right: 0px;
   }

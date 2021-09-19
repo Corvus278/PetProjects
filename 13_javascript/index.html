@@ -6,7 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/sources/swiper-bundle.min.css">
   <link href="style/style.css" rel="stylesheet">
+  <script src="js/sources/swiper-bundle.min.js"></script>
+  <script src="js/swiper.js"></script>
   <title>Euclid</title>
 </head>
 
@@ -118,23 +121,36 @@
   <main>
     <section class="order index-section">
       <div class="container order__container">
-        <div class="order__wrapper">
-          <div class="order__content">
-            <h1 class="order__heading">
-              Проектные решения любой сложности
-            </h1>
-            <p class="order__description index-p">
-              Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом
-              проектантов
-            </p>
-            <a class="button button--orange order__order-payment index-a" href="">
-              Заказать расчёт
-            </a>
+        <div class="swiper">
+          <div class="order__wrapper">
+            <div class="order__content">
+              <h1 class="order__heading">
+                Проектные решения любой сложности
+              </h1>
+              <p class="order__description index-p">
+                Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом
+                проектантов
+              </p>
+              <a class="button button--orange order__order-payment index-a" href="">
+                Заказать расчёт
+              </a>
+            </div>
           </div>
+          <div class="swiper-wrapper index-ul">
+            <div class="swiper-slide">
+              <div class="order__background order__background--1"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="order__background order__background--2"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="order__background order__background--3"></div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </section>
-
     <section class="about index-section">
       <div class="container about__container">
         <h2 class="about__heading section-heading index-h2">
