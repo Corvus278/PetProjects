@@ -10,6 +10,7 @@
   <link href="style/style.css" rel="stylesheet">
   <script src="js/sources/swiper-bundle.min.js"></script>
   <script src="js/swiper.js"></script>
+  <script defer src="js/tabs.js"></script>
   <title>Euclid</title>
 </head>
 
@@ -215,46 +216,109 @@
         </h2>
         <ul class="as-we-work__btn-step-list index-ul">
           <li class="as-we-work__step-button-wrapper">
-            <button class="as-we-work__step-button orange-text index-button">
+            <button class="as-we-work__step-button as-we-work__step-button--active index-button" data-path="one">
               1 шаг
             </button>
           </li>
           <li class="as-we-work__step-button-wrapper">
-            <button class="as-we-work__step-button index-button">
+            <button class=" index-button as-we-work__step-button" data-path="two">
               2 шаг
             </button>
           </li>
           <li class="as-we-work__step-button-wrapper">
-            <button class="as-we-work__step-button index-button">
+            <button class="as-we-work__step-button index-button" data-path="three">
               3 шаг
             </button>
           </li>
           <li class="as-we-work__step-button-wrapper">
-            <button class="as-we-work__step-button index-button">
+            <button class="as-we-work__step-button index-button" data-path="four">
               4 шаг
             </button>
           </li>
         </ul>
-        <div class="as-we-work__content as-we-work__content--consultation">
-          <h3 class="as-we-work__content-heading index-h3">
-            Проводим консультацию
-          </h3>
-          <p class="as-we-work__text-content index-p">
-            Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках
-            спецификации современных стандартов, некоторые особенности внутренней политики будут объективно
-            рассмотрены соответствующими инстанциями. А также представители современных социальных резервов,
-            инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего
-            лишь
-            частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты
-            целой серии независимых исследований. Кстати, стремящиеся вытеснить традиционное производство,
-            нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы,
-            разумеется, призваны к ответу.
-          </p>
-          <div class="as-we-work__button-group">
-            <a class="button button--orange as-we-work__more index-a" href="">Подробнее</a>
-            <a class="button button--offer as-we-work__offer index-a" href="">Договор</a>
-          </div>
-        </div>
+        <ul class="as-we-work__tab-list index-ul">
+          <li class="as-we-work__content as-we-work__content--consultation tab-active" data-path="one">
+            <div>
+              <h3 class="as-we-work__content-heading index-h3">
+                Проводим консультацию
+              </h3>
+              <p class="as-we-work__text-content index-p">
+                Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках
+                спецификации современных стандартов, некоторые особенности внутренней политики будут объективно
+                рассмотрены соответствующими инстанциями. А также представители современных социальных резервов,
+                инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего
+                лишь
+                частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты
+                целой серии независимых исследований. Кстати, стремящиеся вытеснить традиционное производство,
+                нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы,
+                разумеется, призваны к ответу.
+              </p>
+            </div>
+            <div class="as-we-work__button-group">
+              <a class="button button--orange as-we-work__more index-a" href="">Подробнее</a>
+              <a class="button button--offer as-we-work__offer index-a" href="">Договор</a>
+            </div>
+          </li>
+          <li class="as-we-work__content as-we-work__content--make-estimate" data-path="two">
+            <div>
+              <h3 class="as-we-work__content-heading index-h3">
+                Составляем смету
+              </h3>
+              <p class="as-we-work__text-content index-p">
+                Внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных
+                стандартов,
+                некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А
+                также представители современных социальных резервов, инициированные исключительно синтетически,
+                ограничены
+                исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных
+                источников, современные исследования подвергнуты целой серии независимых исследований.
+              </p>
+            </div>
+            <div class="as-we-work__button-group">
+              <a class="button button--orange as-we-work__more index-a" href="">Подробнее</a>
+              <a class="button button--offer as-we-work__offer index-a" href="">Договор</a>
+            </div>
+          </li>
+          <li class="as-we-work__content as-we-work__content--atract-contractors" data-path="three">
+            <div>
+              <h3 class="as-we-work__content-heading index-h3">
+                Привлекаем подрядчиков
+              </h3>
+              <p class="as-we-work__text-content index-p">
+                Идейные соображения высшего порядка, а также новая модель организационной деятельности требует анализа
+                прогресса профессионального сообщества. Высокий уровень вовлечения представителей целевой аудитории
+                является четким доказательством простого факта: высококачественный прототип будущего проекта напрямую
+                зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель
+                организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание
+                показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности
+                позволяет
+                выполнить важные задания по разработке прогресса профессионального сообщества.
+              </p>
+            </div>
+            <div class="as-we-work__button-group">
+              <a class="button button--orange as-we-work__more index-a" href="">Подробнее</a>
+              <a class="button button--offer as-we-work__offer index-a" href="">Договор</a>
+            </div>
+          </li>
+          <li class="as-we-work__content as-we-work__content--inspecting" data-path="four">
+            <div>
+              <h3 class="as-we-work__content-heading index-h3">
+                Инспектируем все этапы работ
+              </h3>
+              <p class="as-we-work__text-content index-p">
+                Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого
+                факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития.
+                Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о
+                возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное
+                информационно-пропагандистское обеспечение нашей деятельности позволяет.
+              </p>
+            </div>
+            <div class="as-we-work__button-group">
+              <a class="button button--orange as-we-work__more index-a" href="">Подробнее</a>
+              <a class="button button--offer as-we-work__offer index-a" href="">Договор</a>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
 

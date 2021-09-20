@@ -629,13 +629,27 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   transition-duration: .2s;
 }
 
+.as-we-work__step-button--active {
+  color: #E1670E;
+  outline: none !important;
+  border-color: transparent !important;
+}
+
 .orange-text {
   color: #E1670E;
 }
 
 .as-we-work__content {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
   position: relative;
   width: 42.82%;
+  min-height: 472px;
+}
+
+.tab-active {
+  display: flex;
 }
 
 .as-we-work__content::after {
@@ -654,6 +668,18 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   background-image: url("../pictures/consultation.jpg");
 }
 
+.as-we-work__content--make-estimate::after {
+  background-image: url(/pictures/cost-estimate.jpg)
+}
+
+.as-we-work__content--atract-contractors::after {
+  background-image: url(/pictures/bring-contractor.jpg)
+}
+
+.as-we-work__content--inspecting::after {
+  background-image: url(/pictures/inspecting-works.jpg)
+}
+
 .as-we-work__content-heading {
   margin-bottom: 7.8px;
   font-size: 24px;
@@ -662,7 +688,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 .as-we-work__text-content {
-  margin-bottom: 49px;
+  margin-bottom: 50px;
 }
 
 .as-we-work__background-img {
