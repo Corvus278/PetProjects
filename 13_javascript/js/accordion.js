@@ -3,7 +3,7 @@ $(function () {
   $(".questions__list").accordion({
     active: true,
     collapsible: true,
-    animate: 700,
+    animate: 300,
     heightStyle: "content"
   });
 

@@ -417,6 +417,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   padding: 101px 81px;
   color: white;
   background-size: cover;
+  pointer-events: none;
+}
+
+.order__order-payment {
+  pointer-events: auto;
 }
 
 .order__content {
@@ -806,6 +811,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .question__answer {
   line-height: 32px;
+  color: black;
 }
 
 .question__answer:not(:last-child) {
