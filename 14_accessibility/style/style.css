@@ -40,6 +40,7 @@
 
 /* Global */
 :root {
+  --primary-color: #FF9900;
   --swiper-pagination-bullet-size: 15px;
   --swiper-pagination-bullet-margin-bottom: 30px;
   --swiper-pagination-bullet-horizontal-gap: 10px;
@@ -472,6 +473,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   bottom: var(--swiper-pagination-bullet-margin-bottom);
 }
 
+.swiper-pagination-bullet:focus {
+  outline: 2px solid var(--primary-color)
+}
+
 .order__background {
   width: 100%;
   height: 100%;
@@ -493,7 +498,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .button--orange {
   color: white;
-  background: #FF9900;
+  background: var(--primary-color);
 }
 
 /* About */
@@ -567,7 +572,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   padding-bottom: 21px;
   padding-left: 35px;
   padding-right: 40px;
-  border: 3px solid #FF9900;
+  border: 3px solid var(--primary-color);
   transition-property: background-color, border-color;
   transition-duration: .2s;
 }
@@ -1002,25 +1007,25 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 /* Focus */
 .mobile-menu__close-button:focus {
-  outline: 2px solid #FF9900;
+  outline: 2px solid var(--primary-color);
 }
 
 .mobile-menu__nav-link:focus {
-  outline: 2px solid #FF9900;
+  outline: 2px solid var(--primary-color);
 }
 
 .header-nav__link:focus {
   border: none;
-  outline: 2px solid #FF9900;
+  outline: 2px solid var(--primary-color);
 }
 
 .header__search-button:focus {
-  outline: 2px solid #FF9900
+  outline: 2px solid var(--primary-color)
 }
 
 .header__search-input:focus {
   outline: none;
-  border-color: #FF9900;
+  border-color: var(--primary-color);
 }
 
 .order__order-payment:focus {
@@ -1029,12 +1034,12 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 .button--section-about:focus {
-  background-color: #FF9900;
+  background-color: var(--primary-color);
   outline: none;
 }
 
 .as-we-work__step-button:focus {
-  outline: 2px solid #FF9900;
+  outline: 2px solid var(--primary-color);
 }
 
 .as-we-work__more:focus {
@@ -1050,14 +1055,14 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 .question:focus {
-  color:#FF9900;
-  border-color: #FF9900;
+  color:var(--primary-color);
+  border-color: var(--primary-color);
   outline: none;
 }
 
 .question:focus
 .question__icon {
-  background-color:#FF9900;
+  background-color:var(--primary-color);
 }
 
 .question:focus
@@ -1071,11 +1076,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 .footer-nav__link:focus {
-  outline: 2px solid #FF9900;
+  outline: 2px solid var(--primary-color);
 }
 
 .social-link:focus {
-  outline: 2px solid #FF9900;
+  outline: 2px solid var(--primary-color);
 }
 
 .application-form__input:focus {
@@ -1099,12 +1104,12 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 .header-nav__link:hover {
-  border-bottom: 2px solid #FF9900;
+  border-bottom: 2px solid var(--primary-color);
   outline: none;
 }
 
 .header__search-button:hover {
-  color: #FF9900;
+  color: var(--primary-color);
   outline: none;
 }
 
@@ -1118,7 +1123,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 .button--section-about:hover {
-  background-color: #FF9900;
+  background-color: var(--primary-color);
 }
 
 .header__search-submit:hover {
@@ -1130,7 +1135,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 .as-we-work__step-button:hover {
-  color: #FF9900;
+  color: var(--primary-color);
   outline: none;
 }
 
@@ -1145,13 +1150,13 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 .question:hover {
-  color:#FF9900;
-  border-color: #FF9900;
+  color:var(--primary-color);
+  border-color: var(--primary-color);
 }
 
 .question:hover
 .question__icon {
-  background-color:#FF9900;
+  background-color:var(--primary-color);
 }
 
 .question:hover
@@ -1165,7 +1170,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 .footer-nav__link:hover {
-  color: #FF9900;
+  color: var(--primary-color);
   outline: none;
 }
 
@@ -1175,7 +1180,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .social-link:hover
 .index-footer__social-link-color {
-  fill: #FF9900;
+  fill: var(--primary-color);
 }
 
 .application-form__input:hover {
@@ -1766,7 +1771,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   }
 
   .button--section-about {
-    color: #FF9900;
+    color: var(--primary-color);
   }
 }
 
