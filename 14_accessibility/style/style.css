@@ -1028,6 +1028,14 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   border-color: var(--primary-color);
 }
 
+.header__search-submit:focus {
+  outline: 2px solid var(--primary-color);
+}
+
+.header__search-close:focus {
+  outline: 2px solid var(--primary-color);
+}
+
 .order__order-payment:focus {
   background-color: rgba(255, 153, 0, 0.7);
   outline: none;
