@@ -944,7 +944,9 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 .application-form__input-checkbox {
-  display: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   margin: 0px;
 }
 
@@ -985,6 +987,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .application-form__check-label::after {
   content: "";
   display: block;
+}
+
+.application-form__input-checkbox:focus +
+.application-form__check-label::before {
+  border: 1px solid var(--primary-color);
 }
 
 .application-form__button {
