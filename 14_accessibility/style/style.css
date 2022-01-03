@@ -1054,25 +1054,29 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   border-color: #666666;
 }
 
-.question:focus {
+.question:focus-within {
   color:var(--primary-color);
   border-color: var(--primary-color);
   outline: none;
 }
 
-.question:focus
+.question:focus-within
 .question__icon {
   background-color:var(--primary-color);
 }
 
-.question:focus
+.question:focus-within
 .question__icon::before {
   background-color:#FFFFFF;
 }
 
-.question:focus
+.question:focus-within
 .question__icon::after {
   background-color:#FFFFFF;
+}
+
+.question__heading:focus {
+  outline: none;
 }
 
 .footer-nav__link:focus {
