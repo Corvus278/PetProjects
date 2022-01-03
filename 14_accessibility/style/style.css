@@ -944,7 +944,9 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 .application-form__input-checkbox {
-  display: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   margin: 0px;
 }
 
@@ -987,6 +989,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   display: block;
 }
 
+.application-form__input-checkbox:focus +
+.application-form__check-label::before {
+  border: 1px solid var(--primary-color);
+}
+
 .application-form__button {
   padding: 19px 52px;
   text-align: center;
@@ -1026,6 +1033,14 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .header__search-input:focus {
   outline: none;
   border-color: var(--primary-color);
+}
+
+.header__search-submit:focus {
+  outline: 2px solid var(--primary-color);
+}
+
+.header__search-close:focus {
+  outline: 2px solid var(--primary-color);
 }
 
 .order__order-payment:focus {

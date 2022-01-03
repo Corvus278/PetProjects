@@ -12,6 +12,10 @@ function startSwiper() {
       el: '.swiper-pagination',
       clickable: true,
     },
+
+    a11y: {
+      paginationBulletMessage: 'Переход к слайду {{index}}',
+    },
   })
 }
 
