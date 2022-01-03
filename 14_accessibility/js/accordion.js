@@ -4,7 +4,7 @@ $(function () {
     active: true,
     collapsible: true,
     animate: 300,
-    heightStyle: "content"
+    heightStyle: "content",
   });
 
   // Персональная настройка
