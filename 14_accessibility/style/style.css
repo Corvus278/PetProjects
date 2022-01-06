@@ -48,6 +48,7 @@
   --swiper-pagination-bullet-inactive-color: #fff;
   --swiper-pagination-bullet-inactive-opacity: 0.4;
   --question-space: 39px;
+  --label-padding-top: 5px;
 }
 
 * {
@@ -951,7 +952,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .application-form__check-label {
   position: relative;
-  padding-top: 5px;
   padding-left: 18px;
   user-select: none;
   cursor: pointer;
