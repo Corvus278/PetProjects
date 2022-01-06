@@ -939,7 +939,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 .application-form__checkbox-container {
   display: flex;
   margin-left: 22px;
-  flex-direction: row-reverse;
   align-items: center;
 }
 
