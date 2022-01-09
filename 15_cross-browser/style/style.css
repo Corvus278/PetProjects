@@ -795,7 +795,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   top: 50%;
   left: 50%;
   width: 60%;
-  height: .1px;
+  height: 1px;
   transform: translate(-50%, -50%);
   background-color: #666666;
   transition-property: background-color;
@@ -808,7 +808,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
   top: 50%;
   left: 50%;
   height: 60%;
-  width: .1px;
+  width: 1px;
   transform: translate(-50%, -50%);
   background-color: rgba(102, 102, 102, 1);
   transition-property: background-color;
