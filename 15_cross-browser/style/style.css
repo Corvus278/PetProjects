@@ -681,15 +681,15 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 .as-we-work__content--make-estimate::after {
-  background-image: url(/pictures/cost-estimate.jpg)
+  background-image: url(/pictures/cost-estimate.jpg) !important;
 }
 
 .as-we-work__content--atract-contractors::after {
-  background-image: url(/pictures/bring-contractor.jpg)
+  background-image: url(/pictures/bring-contractor.jpg) !important;
 }
 
 .as-we-work__content--inspecting::after {
-  background-image: url(/pictures/inspecting-works.jpg)
+  background-image: url(/pictures/inspecting-works.jpg) !important;
 }
 
 .as-we-work__content-heading {
