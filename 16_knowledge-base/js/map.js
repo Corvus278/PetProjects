@@ -1,12 +1,13 @@
 (() => {
   ymaps.ready(init)
+
   function init() {
     const coordinates = [48.872185073737896, 2.354223999999991]
+
     const options = {
       center: coordinates,
       zoom: 12,
     }
-
     const myMap = new ymaps.Map('map', options)
 
     const placemarkSize = [28, 40]

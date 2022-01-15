@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/base.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
   <link rel="stylesheet" href="css/style.css">
   <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
   <script defer src="js/select.js"></script>
@@ -14,6 +15,8 @@
     type="text/javascript">
     </script>
   <script defer src="js/map.js"></script>
+  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+
   <title>Интерактивные элементы</title>
 </head>
 
@@ -94,32 +97,24 @@
 
         </div>
       </li>
-      <li class="element"></li>
+      <li class="element element--scroll">
+        <div class="scroll-cont" data-simplebar>
+          <p class="scroll-cont__text">
+            Сложно сказать, почему многие известные личности представлены в исключительно положительном свете. Лишь
+            активно развивающиеся страны третьего мира будут объективно рассмотрены соответствующими инстанциями. Мы
+            вынуждены отталкиваться от того, что высокотехнологичная концепция общественного уклада представляет собой
+            интересный эксперимент проверки глубокомысленных рассуждений. Имеется спорная точка зрения, гласящая
+            примерно следующее: непосредственные участники технического прогресса освещают чрезвычайно интересные
+            особенности картины в целом, однако конкретные выводы, разумеется, обнародованы. Значимость этих проблем
+            настолько очевидна, что социально-экономическое развитие, а также свежий взгляд на привычные вещи -
+            безусловно открывает новые горизонты для первоочередных требований.
+          </p>
+        </div>
+      </li>
       <li class="element"></li>
       <li class="element"></li>
     </ul>
   </main>
-  <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=e765ad91-afc0-4adc-9ca0-dd6bbc2f4f65&lang=ru_RU"
-    type="text/javascript">
-    </script>
-  <script type="text/javascript">
-    // Функция ymaps.ready() будет вызвана, когда
-    // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
-    ymaps.ready(init);
-    function init() {
-      // Создание карты.
-      var myMap = new ymaps.Map("map", {
-        // Координаты центра карты.
-        // Порядок по умолчанию: «широта, долгота».
-        // Чтобы не определять координаты центра карты вручную,
-        // воспользуйтесь инструментом Определение координат.
-        center: [55.76, 37.64],
-        // Уровень масштабирования. Допустимые значения:
-        // от 0 (весь мир) до 19.
-        zoom: 7
-      });
-    }
-  </script> -->
 </body>
 
 </html>

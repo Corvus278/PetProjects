@@ -186,3 +186,20 @@ body {
 [class*="ground-pane"] {
   filter: grayscale(1);
 }
+
+/* Scroll */
+.scroll-cont {
+  width: 399px;
+  height: 310px;
+  padding: 20px 30px;
+  background-color: #fff;
+  overflow: auto;
+}
+
+.simplebar-scrollbar::before {
+  background-color: var(--primary-color);
+}
+
+.simplebar-scrollbar.simplebar-visible:before {
+  opacity: 1;
+}
