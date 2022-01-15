@@ -144,6 +144,10 @@ body {
   padding: 0;
 }
 
+*[data-value="Материал"][role="option"]{
+  display: none;
+}
+
 .choices__inner,
 .is-open .choices__inner {
   min-height: 0;
