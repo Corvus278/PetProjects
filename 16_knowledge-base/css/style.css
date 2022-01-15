@@ -32,14 +32,10 @@ body {
 
 .elements-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 50px;
-  /* align-items: center; */
+  align-items: center;
 }
-
-/* .element:not(:last-child) {
-  margin-bottom: 40px;
-} */
 
 .visually-hidden {
   position: absolute;
@@ -179,4 +175,14 @@ body {
 .choices__list {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+/* Map */
+.map-cont {
+  width: 460px;
+  height: 460px;
+}
+
+[class*="ground-pane"] {
+  filter: grayscale(1);
 }

@@ -8,8 +8,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/base.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
   <link rel="stylesheet" href="css/style.css">
-  <script defer src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
   <script defer src="js/select.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=e765ad91-afc0-4adc-9ca0-dd6bbc2f4f65&lang=ru_RU"
+    type="text/javascript">
+    </script>
+  <script defer src="js/map.js"></script>
   <title>Интерактивные элементы</title>
 </head>
 
@@ -85,14 +89,37 @@
           </option>
         </select>
       </li>
-      <li class="element">
-        ываыва
+      <li class="element element--map">
+        <div class="map-cont" id="map">
+
+        </div>
       </li>
       <li class="element"></li>
       <li class="element"></li>
       <li class="element"></li>
     </ul>
   </main>
+  <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=e765ad91-afc0-4adc-9ca0-dd6bbc2f4f65&lang=ru_RU"
+    type="text/javascript">
+    </script>
+  <script type="text/javascript">
+    // Функция ymaps.ready() будет вызвана, когда
+    // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+    ymaps.ready(init);
+    function init() {
+      // Создание карты.
+      var myMap = new ymaps.Map("map", {
+        // Координаты центра карты.
+        // Порядок по умолчанию: «широта, долгота».
+        // Чтобы не определять координаты центра карты вручную,
+        // воспользуйтесь инструментом Определение координат.
+        center: [55.76, 37.64],
+        // Уровень масштабирования. Допустимые значения:
+        // от 0 (весь мир) до 19.
+        zoom: 7
+      });
+    }
+  </script> -->
 </body>
 
 </html>
