@@ -129,6 +129,7 @@ body {
   border-top: 0;
   transform: rotate(45deg);
   pointer-events: none;
+  z-index: 3;
 }
 
 .choices[data-type*=select-one].is-open::after {
@@ -147,9 +148,11 @@ body {
 
 .choices__inner,
 .is-open .choices__inner {
+  position: relative;
   min-height: 0;
   padding: 6px 15px 14px 15px;
   border-radius: 10px;
+  z-index: 2;
 }
 
 .is-focused .choices__inner,
@@ -164,6 +167,8 @@ body {
 .choices__list--dropdown,
 .is-open .choices__list--dropdown,
 .is-flipped .choices__list--dropdown {
+  padding-top: 8px;
+  transform: translateY(-8px);
   border: 1px solid var(--primary-color);
   border-top: none;
   border-radius: 0 0 10px 10px;

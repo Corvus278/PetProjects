@@ -2,6 +2,7 @@ const options = {
   searchEnabled: false,
   position: 'bottom',
   allowHTML: true,
+  itemSelectText: '',
 }
 
 const element = document.querySelector('#materialSelect')
