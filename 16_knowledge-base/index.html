@@ -16,6 +16,10 @@
     </script>
   <script defer src="js/map.js"></script>
   <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+  <script src="js/inputmask.min.js"></script>
+  <script defer src="js/mask.js"></script>
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+  <script defer src="js/form-validate.js"></script>
 
   <title>Интерактивные элементы</title>
 </head>
@@ -111,7 +115,27 @@
           </p>
         </div>
       </li>
-      <li class="element"></li>
+      <li class="element element--form">
+        <form action="" class="form">
+          <div class="form__input-conts">
+            <div class="input-cont">
+              <label for="name" class="form__label">Как вас зовут?</label>
+              <input type="text" class="form__input" id="name" placeholder="Имя*" required>
+            </div>
+            <div class="input-cont">
+              <label for="tel" class="form__label">Укажите ваш телефон</label>
+              <input type="tel" class="form__input" id="tel" placeholder="Телефон*" required>
+            </div>
+            <div class="input-cont">
+              <label for="email" class="form__label">Укажите ваш E-mai</label>
+              <input type="email" class="form__input" id="email" placeholder="E-mail*" required>
+            </div>
+          </div>
+          <button class="form__submit" type="submit">
+            Заказать
+          </button>
+        </form>
+      </li>
       <li class="element"></li>
     </ul>
   </main>
