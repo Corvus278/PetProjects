@@ -252,3 +252,31 @@ body {
   font-size: 20px;
   cursor: pointer;
 }
+
+/* Tooltip */
+.tooltip-text {
+  display: inline-block;
+  width: 375px;
+  padding: 20px 30px;
+  padding-right: 78px;
+  background-color: #fff;
+}
+
+.tooltip-button {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.tooltip-button {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.tooltip-button:hover
+.tooltip-button__img
+path {
+  fill: var(--primary-color);
+}
