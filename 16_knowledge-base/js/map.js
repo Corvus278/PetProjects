@@ -7,8 +7,14 @@
     const options = {
       center: coordinates,
       zoom: 12,
+      controls: [],
     }
-    const myMap = new ymaps.Map('map', options)
+    const myMap = new ymaps.Map('map',
+      options,
+      {
+        suppressMapOpenBlock: true,
+      }
+    )
 
     const placemarkSize = [28, 40]
     const placemark = new ymaps.Placemark(coordinates, {}, {
