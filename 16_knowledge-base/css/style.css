@@ -280,3 +280,13 @@ body {
 path {
   fill: var(--primary-color);
 }
+
+.tippy-box[data-theme~='default'] {
+  padding: 7px 15px;
+  background-color: #666666;
+  border-radius: 0;
+}
+
+.tippy-box[data-theme~='default'][data-placement^='top'] > .tippy-arrow::before {
+  border-top-color: #666666;
+}

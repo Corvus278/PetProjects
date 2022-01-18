@@ -1,6 +1,6 @@
 (() => {
   const options = {
-    content: 'Глава 2, страница 176',
+    theme: 'default',
   }
 
   tippy('.tooltip-button', options)
