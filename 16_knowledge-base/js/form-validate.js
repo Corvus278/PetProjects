@@ -1,11 +1,22 @@
 (() => {
-  const validation = new JustValidate('.form')
+  const validation = new JustValidate('.form',
+    {
+      errorFieldCssClass: 'is-invalid',
+      errorLabelCssClass: 'is-label-invalid',
+      errorLabelStyle: {
+        marginLeft: '20px',
+        marginBottom: '5px',
+        color: 'var(--accent-color)',
+        fontWeight: 400,
+        fontSize: '12px',
+      },
+    })
 
   validation
     .addField('#name', [
       {
         rule: 'required',
-        errorMessage: 'Имя не указано!'
+        errorMessage: 'Как вас зовут?'
       }
     ])
     .addField('#tel', [
@@ -15,15 +26,15 @@
 
           const phone = selector.inputmask.unmaskedvalue()
 
-          return Number(phone) && phone.length === 10
+          return Boolean(Number(phone) && phone.length === 10)
         },
-        errorMessage: `Телефон должен содержать 10 символов`
+        errorMessage: `Укажите ваш телефон`
       }
     ])
     .addField('#email', [
       {
         rule: 'email',
-        errorMessage: 'Некорректный email!'
+        errorMessage: 'Укажите ваш e-mail'
       }
     ])
 })()
