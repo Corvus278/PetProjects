@@ -27,11 +27,13 @@
 *::after,
 *::before {
   box-sizing: border-box;
+  font-family: inherit;
+  font-size: inherit;
 }
 
 html {
-  font-size: 18px;
-  line-height: 1.17rem;
+  font-size: 16px;
+  line-height: 20.8px;
 }
 
 body {
@@ -60,6 +62,14 @@ a {
 
 img {
   max-width: 100%;
+}
+
+h1 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
 }
 
 /* Header */
@@ -111,4 +121,40 @@ img {
 
 .mobile-menu__item:not(:last-child) {
   margin-bottom: 56px;
+}
+
+.mobile-menu__item-link {
+  font-size: 1.125rem;
+  line-height: 21.09px;
+}
+
+/* Section */
+
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* Hero */
+.section--hero {
+  background: radial-gradient(49% 49% at 67.78% 84.57%, #555681 0%, #2E2B44 100%);
+  color: #fff;
+}
+
+.hero__title {
+  margin-bottom: 5px;
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 1.875rem;
+}
+
+.hero__text-content {
+  margin-bottom: 46px;
+}
+
+.hero__action-button {
+  padding: 20px 55px;
+  background: var(--primary-color);
+  border-radius: 20px;
+  color: #fff;
 }
