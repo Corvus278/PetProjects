@@ -21,6 +21,7 @@
 :root {
   --primary-color: #3F2AFF;
   --secondary-color: #2F2C45;
+  --gray6: #666666;
 }
 
 *,
@@ -64,8 +65,16 @@ img {
   max-width: 100%;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   margin: 0;
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.625rem;
 }
 
 p {
@@ -157,4 +166,36 @@ p {
   background: var(--primary-color);
   border-radius: 20px;
   color: #fff;
+}
+
+/* Advantages */
+.advantages__info-cont {
+  margin-bottom: 22px;
+}
+
+.advantages__title {
+  margin-bottom: 3px;
+}
+
+.advantages__desc {
+  color: var(--gray6);
+  line-height: 1.5rem;
+}
+
+.advantages__card:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.advantages__card {
+  display: flex;
+}
+
+.advantages__card-img {
+  margin-right: 30px;
+}
+
+.advantages__card-desc {
+  font-weight: 700;
+  line-height: 1.2rem;
+  color: var(--gray6)
 }
