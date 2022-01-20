@@ -77,6 +77,11 @@ h2 {
   line-height: 1.625rem;
 }
 
+h3 {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
 p {
   margin: 0;
 }
@@ -158,7 +163,7 @@ p {
 }
 
 .hero__text-content {
-  margin-bottom: 46px;
+  margin-bottom: 44px;
 }
 
 .hero__action-button {
@@ -198,4 +203,38 @@ p {
   font-weight: 700;
   line-height: 1.2rem;
   color: var(--gray6)
+}
+
+/* Teachers */
+.section--teachers {
+  background-color: var(--secondary-color);
+}
+
+.teachers__title {
+  color: #fff;
+  line-height: 1rem;
+  margin-bottom: 28px;
+}
+
+.teachers__list {
+  margin-bottom: -30px;
+}
+
+.teachers__card {
+  color: #fff;
+  margin-bottom: 21px;
+}
+
+.teacher__img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.teacher__title {
+  margin-bottom: 10px;
+}
+
+.teacher__desc {
+  opacity: 0.5;
+  line-height: 1.5rem;
 }
