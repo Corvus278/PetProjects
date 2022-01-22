@@ -39,7 +39,7 @@ html {
 
 body {
   margin: 0;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-weight: 400;
 }
 
@@ -62,6 +62,7 @@ a {
 }
 
 img {
+  display: block;
   max-width: 100%;
 }
 
@@ -217,17 +218,17 @@ p {
 }
 
 .teachers__list {
-  margin-bottom: -30px;
+  margin-bottom: -26px;
 }
 
 .teachers__card {
   color: #fff;
-  margin-bottom: 21px;
+  margin-bottom: 23px;
 }
 
 .teacher__img {
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
 }
 
 .teacher__title {
@@ -237,4 +238,112 @@ p {
 .teacher__desc {
   opacity: 0.5;
   line-height: 1.5rem;
+}
+
+/* Courses */
+.courses__title {
+  margin-bottom: 30px;
+  line-height: 0.8rem;
+}
+
+.courses__list {
+  margin-bottom: -30px;
+}
+
+.courses__card {
+  margin-bottom: 30px;
+}
+
+.course {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 653px;
+  border-radius: 20px;
+}
+
+.course::after {
+  content: '-- часов';
+  position: absolute;
+  min-width: 95px;
+  height: 24px;
+  z-index: 12;
+  top: 10px;
+  right: 10px;
+  padding-top: 1px;
+  padding-left: 29px;
+  background: url(../img/clock.svg) no-repeat left top;
+  line-height: 1.5rem;
+  color: #fff;
+}
+
+.course--40h::after {
+  content: '40 часов';
+}
+
+.course--60h::after {
+  content: '60 часов';
+}
+
+.course--80h::after {
+  content: '80 часов';
+}
+
+.course__img {
+  position: relative;
+  width: 100%;
+}
+
+.course__content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  padding: 31px 30px;
+  background-color: #EDF0F9;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+
+.course__title {
+  margin-bottom: 9px;
+  line-height: 1.4625rem;
+}
+
+.course__desc {
+  margin-bottom: auto;
+  opacity: 0.6;
+  line-height: 1.5rem;
+}
+
+.course__more-button {
+  padding: 20px 56px;
+  margin-top: 25px;
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+}
+
+/* Footer */
+.footer__contact-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 28px 0;
+  background-color: var(--secondary-color);
+}
+
+.footer__copywrite {
+  text-align: center;
+  font-size: 0.8125rem;
+  line-height: 1.171em;
+}
+
+.reg {
+  color: var(--primary-color);
+  vertical-align: middle;
 }
