@@ -93,6 +93,23 @@ p {
   background-color: var(--primary-color);
 }
 
+.header__navigation {
+  width: 100%;
+  margin-top: 30px;
+  font-size: 1.125rem;
+  /* text-align: center; */
+}
+
+.desck-nav__list {
+  /* display: flex; */
+  color: #fff;
+  /* justify-content: space-around; */
+}
+
+.desk-nav__item {
+  display: inline-block;
+}
+
 .mobile-menu-cont {
   display: flex;
   align-items: center;
@@ -346,4 +363,23 @@ p {
 .reg {
   color: var(--primary-color);
   vertical-align: middle;
+}
+
+@media (min-width: 575px) {
+  .header {
+    padding: 30px 0;
+  }
+  .header__mobile-menu-cont {
+    display: none;
+  }
+
+  .header__logo {
+    margin: 0 auto;
+    width: 94px;
+    height: 21px;
+  }
+
+  .header__navigation {
+    display: block;
+  }
 }
