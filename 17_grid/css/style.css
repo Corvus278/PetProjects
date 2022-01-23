@@ -94,16 +94,17 @@ p {
 }
 
 .header__navigation {
+  display: none;
   width: 100%;
-  margin-top: 30px;
+  margin-top: 31px;
   font-size: 1.125rem;
-  /* text-align: center; */
 }
 
 .desck-nav__list {
-  /* display: flex; */
+  display: flex;
+  justify-content: space-around;
+  margin: 0 -8px;
   color: #fff;
-  /* justify-content: space-around; */
 }
 
 .desk-nav__item {
@@ -177,7 +178,7 @@ p {
   margin-bottom: 5px;
   font-size: 1.875rem;
   font-weight: 700;
-  line-height: 1.875rem;
+  line-height: 1em;
 }
 
 .hero__text-content {
@@ -192,6 +193,10 @@ p {
 }
 
 /* Advantages */
+.advantages__decor {
+  display: none;
+}
+
 .advantages__info-cont {
   margin-bottom: 22px;
 }
@@ -211,10 +216,11 @@ p {
 
 .advantages__card {
   display: flex;
+  gap: 30px;
 }
 
 .advantages__card-img {
-  margin-right: 30px;
+  max-width: 80px;
 }
 
 .advantages__card-desc {
@@ -230,7 +236,7 @@ p {
 
 .teachers__title {
   color: #fff;
-  line-height: 1rem;
+  line-height: .8em;
   margin-bottom: 28px;
 }
 
@@ -260,7 +266,7 @@ p {
 /* Courses */
 .courses__title {
   margin-bottom: 30px;
-  line-height: 0.8rem;
+  line-height: 0.6em;
 }
 
 .courses__list {
@@ -325,7 +331,7 @@ p {
 
 .course__title {
   margin-bottom: 9px;
-  line-height: 1.4625rem;
+  line-height: 1.3em;
 }
 
 .course__desc {
@@ -365,7 +371,12 @@ p {
   vertical-align: middle;
 }
 
-@media (min-width: 575px) {
+@media (min-width: 576px) {
+  .section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
   .header {
     padding: 30px 0;
   }
@@ -382,4 +393,77 @@ p {
   .header__navigation {
     display: block;
   }
+
+  .section--hero {
+    padding-bottom: 135px;
+  }
+
+  .hero__title {
+    margin-bottom: 15px;
+    font-size: 3.125rem;
+    line-height: 1em;
+  }
+
+  .hero__text-content {
+    max-width: 345px;
+    margin-bottom: 61px;
+    font-size: 1.125rem;
+    line-height: 1.5em;
+  }
+
+  .hero__action-button {
+    font-size: 1.125rem;
+    padding: 24px 77px;
+  }
+
+  .section--advantages {
+    padding-bottom: 55px;
+  }
+
+  .advantages__decor {
+    display: block;
+  }
+
+  .advantages__title {
+    margin-bottom: 18px;
+    font-size: 2.5rem;
+    line-height: 1;
+  }
+
+  .advantages__card {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .advantages__card:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .section--teachers {
+    padding-bottom: 78px;
+  }
+
+  .teachers__title {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    line-height: 0.7;
+  }
+
+  .courses__title {
+    font-size: 2.5rem;
+    line-height: .7;
+  }
+
+  .course__title {
+    margin-bottom: 11px;
+    line-height: 1.2em;
+  }
+
+  .course__more-button {
+    padding: 19px 48px;
+  }
+
+  .footer__copywrite {
+    line-height: 1.671em;
+}
 }
