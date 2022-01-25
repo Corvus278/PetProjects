@@ -6,10 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Курсы 3-D моделирования</title>
-  <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon">
+  <link rel="shortcut icon" href="./img/favicon.svg" type="image/svg">
   <script defer src="./js/menu.js"></script>
   <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <link async rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -17,7 +17,7 @@
     <div class="container container--header">
       <img src="./img/logo.svg" alt="Skillbox" class="header__logo">
       <div class="header__mobile-menu-cont">
-        <button class="header__mobile-menu-button">
+        <button class="header__mobile-menu-button" aria-label="Меню">
           <img src="./img/menu.svg" alt="" class="header__mobile-menu-img">
         </button>
       </div>
@@ -60,7 +60,7 @@
               Следует отметить, что существующая теория способствует повышению качества благоприятных перспектив. Не
               следует, однако, забывать.
             </p>
-            <a class="hero__action-button d-inline-block">
+            <a class="hero__action-button d-inline-block" href="">
               Выбрать курс
             </a>
           </div>
@@ -271,16 +271,24 @@
   <footer class="footer">
     <ul class="footer__contact-list">
       <li class="footer__contact">
-        <img src="./img/icon-facebook.svg" alt="Мы в Фейсбуке" class="footer__contact-img">
+        <a href="" class="footer__contact-link" aria-label="Мы в Фейсбуке">
+          <img src="./img/icon-facebook.svg" alt="" class="footer__contact-img">
+        </a>
       </li>
       <li class="footer__contact">
-        <img src="./img/icon-twitter.svg" alt="Мы в Твиттере" class="footer__contact-img">
+        <a href="" class="footer__contact-link" aria-label="Мы в Твиттере">
+          <img src="./img/icon-twitter.svg" alt="" class="footer__contact-img">
+        </a>
       </li>
       <li class="footer__contact">
-        <img src="./img/icon-instagram.svg" alt="Мы в Инстаграме" class="footer__contact-img">
+        <a href="" class="footer__contact-link" aria-label="Мы в Инстаграме">
+          <img src="./img/icon-instagram.svg" alt="" class="footer__contact-img">
+        </a>
       </li>
       <li class="footer__contact">
-        <img src="./img/icon-youtube.svg" alt="Мы в ютубе" class="footer__contact-img">
+        <a href="" class="footer__contact-link" aria-label="Мы в ютубе">
+          <img src="./img/icon-youtube.svg" alt="" class="footer__contact-img">
+        </a>
       </li>
     </ul>
     <p class="footer__copywrite">
