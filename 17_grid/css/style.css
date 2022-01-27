@@ -111,7 +111,7 @@ p {
   font-size: 1.125rem;
 }
 
-.desck-nav__list {
+.desk-nav__list {
   display: flex;
   justify-content: space-around;
   margin: 0 -8px;
@@ -525,7 +525,7 @@ p {
     margin-top: 0;
   }
 
-  .desck-nav__list {
+  .desk-nav__list {
     justify-content: flex-start;
     gap: 56px;
     margin: 0;
