@@ -272,6 +272,8 @@ p {
   width: 100%;
   min-height: 180px;
   margin-bottom: 34px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .teacher__title {
@@ -334,7 +336,9 @@ p {
 
 .course__img {
   width: 100%;
-  height: 180px;
+  min-height: 180px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .course__content {
